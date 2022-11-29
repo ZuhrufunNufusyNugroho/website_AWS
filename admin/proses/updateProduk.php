@@ -1,5 +1,5 @@
 <?php 
-  $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+  $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
 
   $harga = $_POST['harga'];
   $stock = $_POST['stock'];

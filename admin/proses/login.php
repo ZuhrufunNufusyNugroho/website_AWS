@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+  $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
   
   $email = $_POST['email'];
   $password = $_POST['password'];

@@ -12,7 +12,7 @@
     <ul class="nav navbar-nav navbar-right" >
       <li>
         <?php 
-  $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+  $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
           if(isset($_SESSION['idUser'])){
             $iduser = $_SESSION['idUser'];
             $queryUser = mysqli_query($conn, "SELECT * FROM tabel_user WHERE idUser='$_SESSION[idUser]'");
@@ -30,7 +30,7 @@
       </li>
       <li style="border-left: 1px solid white">
       <?php 
-  $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+  $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
         if(isset($_SESSION['idUser'])){
           echo '
             <a class="not-active" href="keranjang.php" data-toggle="tooltip" data-placement="bottom" title="Keranjang"  ><i class="glyphicon glyphicon-shopping-cart" id="trolly"></i></a>

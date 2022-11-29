@@ -51,7 +51,7 @@
                   </thead>
                   <tbody>
                     <?php 
-                        $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                        $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                       $queryUser = mysqli_query($conn, "SELECT * FROM tabel_user ORDER BY idUser ASC");
                       while($arrayUser = mysqli_fetch_array($queryUser)){
                         echo '
@@ -93,7 +93,7 @@
                   </thead>
                   <tbody>
                     <?php 
-                        $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                        $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                       $queryKomen = mysqli_query($conn, "SELECT * FROM tabel_komentar ORDER BY idKomen ASC");
                       $jumlahKomen = mysqli_num_rows($queryKomen); 
                       if($jumlahKomen == 0){
@@ -227,7 +227,7 @@
                       </thead>
                       <tbody>
                       <?php 
-                          $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                          $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                         $kategori = 'pria';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -297,7 +297,7 @@
                       </thead>
                       <tbody>
                         <?php 
-                          $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                          $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                         $kategori = 'wanita';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -365,7 +365,7 @@
                       </thead>
                       <tbody>
                         <?php 
-                          $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'v');
+                          $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'v');
                         $kategori = 'anak';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -433,7 +433,7 @@
                       </thead>
                       <tbody>
                         <?php 
-                          $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                          $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                         $kategori = 'couple';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -501,7 +501,7 @@
                       </thead>
                       <tbody>
                         <?php 
-                          $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                          $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                         $kategori = 'sarimbit';
                         $query = mysqli_query($conn, "SELECT idProduk, nama, keterangan, harga, ukuran, stock, path FROM tabel_produk WHERE kategori='$kategori' ");
                         while($array = mysqli_fetch_array($query)){
@@ -576,7 +576,7 @@
                   <tbody>
                   <?php 
                     $idUser = $_SESSION['idUser'];
-                    $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                    $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                     $queryBarang = mysqli_query($conn, "SELECT * FROM tabel_transaksi WHERE idUser='$idUser'");
 
                     $jumlah = mysqli_num_rows($queryBarang);
@@ -672,7 +672,7 @@
                 </thead>
                 <tbody>
                 <?php 
-                    $conn = mysqli_connect('localhost', 'admin', 'Alohomora00_', 'batiku');
+                    $conn = mysqli_connect('13.212.82.25', 'admin', 'Alohomora00_', 'batiku');
                   $queryAdmin = mysqli_query($conn, "SELECT * FROM tabel_admin");
                   while($arrayAdmin = mysqli_fetch_array($queryAdmin)){
                     echo '
